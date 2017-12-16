@@ -1,0 +1,34 @@
+﻿<Window x:Class="Literay.WindowRenderer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Height="300" Width="300" Icon="/Literay;component/Resources/IconWindowRender.ico" SizeToContent="WidthAndHeight" Loaded="Window_Loaded" Closed="Window_Closed">
+	<Window.CommandBindings>
+		<CommandBinding Command="Save" Executed="mnuFileSave_Click" />
+	</Window.CommandBindings>
+	<Window.InputBindings>
+		<KeyBinding Key="S" Modifiers="Control" Command="Save"></KeyBinding>
+	</Window.InputBindings>
+	<Window.TaskbarItemInfo>
+		<TaskbarItemInfo ProgressState="Normal"/>
+	</Window.TaskbarItemInfo>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<Menu Grid.Row="0">
+			<MenuItem Header="File">
+				<MenuItem x:Name="mnuFileSave" Header="Save" InputGestureText="Ctrl+S" IsEnabled="False" Click="mnuFileSave_Click">
+					<MenuItem.Icon>
+						<Image Source="/Literay;component/Resources/IconFileSave.png"/>
+					</MenuItem.Icon>
+				</MenuItem>
+				<Separator/>
+				<MenuItem Header="Close" Click="mnuFileClose_Click" InputGestureText="Alt+F4" />
+			</MenuItem>
+		</Menu>
+		<ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Grid.Row="2">
+			<Image x:Name="imgMain" />
+		</ScrollViewer>
+	</Grid>
+</Window>

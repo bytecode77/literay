@@ -1,0 +1,18 @@
+﻿<Window x:Class="Literay.WindowAbout"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About Literay" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/Literay;component/Literay.ico" SizeToContent="WidthAndHeight">
+	<Grid Background="#FFF7F7F7">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Image Source="/Literay;component/Resources/ImageAbout.png" Stretch="None"/>
+		<Label x:Name="lblVersion" Grid.Row="0" Content="Version:" HorizontalAlignment="Left" Margin="25,103,0,0" VerticalAlignment="Top" Padding="0"/>
+		<TextBlock Grid.Row="1" TextWrapping="Wrap" Padding="10,10,10,0">
+			<Run Text="Copyright by bytecode77, 2011-2016."/><LineBreak /><LineBreak /><Run Text="Please visit my web site for news and updates."/><LineBreak /><Hyperlink x:Name="lnkWebsite" Click="lnkWebsite_Click"><Run Text="bytecode77.com"/></Hyperlink>
+		</TextBlock>
+		<Button x:Name="btnOK" Content="OK" Margin="0,10,10,10" HorizontalAlignment="Right" Click="btnOK_Click" IsCancel="True" IsDefault="True" Grid.Row="2" Padding="30,1"/>
+	</Grid>
+</Window>

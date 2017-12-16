@@ -1,0 +1,121 @@
+﻿<SyntaxDefinition name="Lua" extensions=".lua" xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">
+	<Color name="Comment" foreground="Green" />
+	<Color name="String" foreground="Brown" />
+	<RuleSet>
+		<Span color="Comment" multiline="true">
+			<Begin>--\[\[</Begin>
+			<End>\]\]--</End>
+		</Span>
+		<Span color="Comment" ruleSet="comments set" multiline="false">
+			<Begin>--</Begin>
+		</Span>
+		<Span foreground="Gray">
+			<Begin>\#</Begin>
+		</Span>
+		<Span color="String">
+			<Begin>"</Begin>
+			<End>"</End>
+			<RuleSet>
+				<Span begin="\\" end="." />
+			</RuleSet>
+		</Span>
+		<Span color="String">
+			<Begin>'</Begin>
+			<End>'</End>
+			<RuleSet>
+				<Span begin="\\" end="." />
+			</RuleSet>
+		</Span>
+		<Span foreground="#FFFF6600">
+			<Begin>/(?!(\ ))</Begin>
+			<End>/</End>
+		</Span>
+		<Keywords foreground="DarkCyan">
+			<Word>class</Word>
+		</Keywords>
+		<Keywords foreground="Blue">
+			<Word>else</Word>
+			<Word>if</Word>
+			<Word>case</Word>
+			<Word>for</Word>
+			<Word>while</Word>
+			<Word>then</Word>
+			<Word>end</Word>
+			<Word>function</Word>
+			<Word>self</Word>
+		</Keywords>
+		<Keywords foreground="#FF2B91AF">
+			<Word>abs</Word>
+			<Word>acos</Word>
+			<Word>asin</Word>
+			<Word>atan</Word>
+			<Word>atan2</Word>
+			<Word>ceil</Word>
+			<Word>cos</Word>
+			<Word>cosh</Word>
+			<Word>exp</Word>
+			<Word>floor</Word>
+			<Word>log</Word>
+			<Word>log10</Word>
+			<Word>max</Word>
+			<Word>min</Word>
+			<Word>pow</Word>
+			<Word>round</Word>
+			<Word>sign</Word>
+			<Word>sin</Word>
+			<Word>sinh</Word>
+			<Word>sqrt</Word>
+			<Word>tan</Word>
+			<Word>tanh</Word>
+			<Word>rand</Word>
+			<Word>pi</Word>
+
+			<Word>switch</Word>
+
+			<Word>createcamera</Word>
+			<Word>createlight</Word>
+			<Word>createplane</Word>
+			<Word>createcube</Word>
+			<Word>createsphere</Word>
+			<Word>createcylinder</Word>
+			<Word>createtube</Word>
+			<Word>loadtexture</Word>
+
+			<Word>setzoom</Word>
+			<Word>setangle</Word>
+			<Word>setclscolor</Word>
+			<Word>setambientlight</Word>
+			<Word>setfogenabled</Word>
+			<Word>setfogrange</Word>
+			<Word>setbrightness</Word>
+			<Word>setplanevector</Word>
+			<Word>setposition</Word>
+			<Word>setsize</Word>
+			<Word>setradius</Word>
+			<Word>setinnerradius</Word>
+			<Word>setheight</Word>
+			<Word>setcolor</Word>
+			<Word>setreflection</Word>
+			<Word>setspecular</Word>
+			<Word>settexture</Word>
+			<Word>settexture2</Word>
+			<Word>setbumpmap</Word>
+			<Word>setbumpmap2</Word>
+
+			<Word>render</Word>
+			<Word>debug</Word>
+		</Keywords>
+	</RuleSet>
+	<RuleSet name="comments set">
+		<Span foreground="Teal" multiline="true">
+			<Begin>--\[\[</Begin>
+			<End>\]\]--</End>
+			<RuleSet>
+				<Span color="Comment" ruleSet="comments set" multiline="true">
+					<Begin>--\[\[</Begin>
+					<End>\]\]--</End>
+				</Span>
+			</RuleSet>
+		</Span>
+	</RuleSet>
+</SyntaxDefinition>

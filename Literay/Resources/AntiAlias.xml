@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Masks>
+	<Mask Name="None">
+		<SubPixel X="0" Y="0" />
+	</Mask>
+	<Mask Name="4x OG">
+		<SubPixel X="-.3" Y="-.3" />
+		<SubPixel X="-.3" Y=".3" />
+		<SubPixel X=".3" Y="-.3" />
+		<SubPixel X=".3" Y=".3" />
+	</Mask>
+	<Mask Name="4x RG">
+		<SubPixel X="-.125" Y="-.375" />
+		<SubPixel X=".375" Y="-.125" />
+		<SubPixel X="-.375" Y=".125" />
+		<SubPixel X=".125" Y=".375" />
+	</Mask>
+	<Mask Name="8x RG">
+		<SubPixel X="-.125" Y="-.375" />
+		<SubPixel X=".375" Y="-.125" />
+		<SubPixel X="-.375" Y=".125" />
+		<SubPixel X=".125" Y=".375" />
+		<SubPixel X="-.3125" Y="-.4375" />
+		<SubPixel X=".4375" Y="-.3125" />
+		<SubPixel X="-.4375" Y=".3125" />
+		<SubPixel X=".3125" Y=".4375" />
+	</Mask>
+	<Mask Name="16x OG">
+		<SubPixel X="-.35" Y="-.35" />
+		<SubPixel X="-.12" Y="-.35" />
+		<SubPixel X=".12" Y="-.35" />
+		<SubPixel X=".35" Y="-.35" />
+		<SubPixel X="-.35" Y="-.12" />
+		<SubPixel X="-.12" Y="-.12" />
+		<SubPixel X=".12" Y="-.12" />
+		<SubPixel X=".35" Y="-.12" />
+		<SubPixel X="-.35" Y=".12" />
+		<SubPixel X="-.12" Y=".12" />
+		<SubPixel X=".12" Y=".12" />
+		<SubPixel X=".35" Y=".12" />
+		<SubPixel X="-.35" Y=".35" />
+		<SubPixel X="-.12" Y=".35" />
+		<SubPixel X=".12" Y=".35" />
+		<SubPixel X=".35" Y=".35" />
+	</Mask>
+	<Mask Name="16x RG">
+		<SubPixel X="-.06" Y=".17" />
+		<SubPixel X=".17" Y=".06" />
+		<SubPixel X="-.17" Y="-.06" />
+		<SubPixel X=".06" Y="-.17" />
+		<SubPixel X=".4" Y=".17" />
+		<SubPixel X=".29" Y="-.06" />
+		<SubPixel X="-.29" Y=".06" />
+		<SubPixel X="-.41" Y="-.17" />
+		<SubPixel X="-.06" Y="-.29" />
+		<SubPixel X=".17" Y="-.41" />
+		<SubPixel X=".4" Y="-.29" />
+		<SubPixel X="-.29" Y="-.41" />
+		<SubPixel X=".29" Y=".4" />
+		<SubPixel X="-.17" Y=".4" />
+		<SubPixel X=".06" Y=".29" />
+		<SubPixel X="-.41" Y=".29" />
+	</Mask>
+</Masks>

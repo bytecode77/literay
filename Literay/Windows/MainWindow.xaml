@@ -1,0 +1,207 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Literay.MainWindow"
+		xmlns:literay="clr-namespace:Literay"
+        Title="Literay" Height="508.826" Width="1050.209" Icon="/Literay;component/Literay.ico" WindowStartupLocation="CenterScreen" Closing="Window_Closing"
+	Name="Window1">
+	<Window.CommandBindings>
+		<CommandBinding Command="New" Executed="mnuFileNew_Click" />
+		<CommandBinding Command="Open" Executed="mnuFileOpen_Click" />
+		<CommandBinding Command="Close" Executed="mnuFileClose_Click" />
+		<CommandBinding Command="Save" Executed="mnuFileSave_Click" />
+		<CommandBinding Command="literay:App.FileSaveAll" Executed="mnuFileSaveAll_Click" />
+		<CommandBinding Command="literay:App.ScriptRun" Executed="mnuScriptRun_Click" />
+		<CommandBinding Command="literay:App.ScriptStop" Executed="mnuScriptStop_Click" />
+	</Window.CommandBindings>
+	<Window.InputBindings>
+		<KeyBinding Key="N" Modifiers="Control" Command="New"></KeyBinding>
+		<KeyBinding Key="O" Modifiers="Control" Command="Open"></KeyBinding>
+		<KeyBinding Key="F4" Modifiers="Control" Command="Close"></KeyBinding>
+		<KeyBinding Key="S" Modifiers="Control" Command="Save"></KeyBinding>
+		<KeyBinding Key="S" Modifiers="Control+Shift" Command="literay:App.FileSaveAll"></KeyBinding>
+		<KeyBinding Key="F5" Command="literay:App.ScriptRun"></KeyBinding>
+		<KeyBinding Key="Pause" Command="literay:App.ScriptStop"></KeyBinding>
+	</Window.InputBindings>
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="250"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<Menu Grid.ColumnSpan="2">
+			<MenuItem Header="File">
+				<MenuItem Header="New" Click="mnuFileNew_Click" InputGestureText="Ctrl+N">
+					<MenuItem.Icon>
+						<Image Source="/Literay;component/Resources/IconFileNew.png"/>
+					</MenuItem.Icon>
+				</MenuItem>
+				<MenuItem Header="Open" Click="mnuFileOpen_Click" InputGestureText="Ctrl+O">
+					<MenuItem.Icon>
+						<Image Source="/Literay;component/Resources/IconFileOpen.png"/>
+					</MenuItem.Icon>
+				</MenuItem>
+				<Separator/>
+				<MenuItem Header="Close" Click="mnuFileClose_Click" InputGestureText="Ctrl+F4" />
+				<Separator/>
+				<MenuItem Header="Save" Click="mnuFileSave_Click" InputGestureText="Ctrl+S">
+					<MenuItem.Icon>
+						<Image Source="/Literay;component/Resources/IconFileSave.png"/>
+					</MenuItem.Icon>
+				</MenuItem>
+				<MenuItem Header="Save As" Click="mnuFileSaveAs_Click" />
+				<MenuItem Header="Save All" Click="mnuFileSaveAll_Click" InputGestureText="Ctrl+Shift+S">
+					<MenuItem.Icon>
+						<Image Source="/Literay;component/Resources/IconFileSaveAll.png"/>
+					</MenuItem.Icon>
+				</MenuItem>
+				<Separator/>
+				<MenuItem Header="Exit" Click="mnuFileExit_Click" InputGestureText="Alt+F4" />
+			</MenuItem>
+			<MenuItem Header="Edit">
+				<MenuItem x:Name="mnuEditUndo" Header="Undo" Click="mnuEditUndo_Click" InputGestureText="Ctrl+Z">
+					<MenuItem.Icon>
+						<Image Source="/Literay;component/Resources/IconEditUndo.png"/>
+					</MenuItem.Icon>
+				</MenuItem>
+				<MenuItem x:Name="mnuEditRedo" Header="Redo" Click="mnuEditRedo_Click" InputGestureText="Ctrl+Y">
+					<MenuItem.Icon>
+						<Image Source="/Literay;component/Resources/IconEditRedo.png"/>
+					</MenuItem.Icon>
+				</MenuItem>
+				<Separator/>
+				<MenuItem x:Name="mnuEditCut" Header="Cut" Click="mnuEditCut_Click" InputGestureText="Ctrl+X">
+					<MenuItem.Icon>
+						<Image Source="/Literay;component/Resources/IconEditCut.png"/>
+					</MenuItem.Icon>
+				</MenuItem>
+				<MenuItem x:Name="mnuEditCopy" Header="Copy" Click="mnuEditCopy_Click" InputGestureText="Ctrl+C">
+					<MenuItem.Icon>
+						<Image Source="/Literay;component/Resources/IconEditCopy.png"/>
+					</MenuItem.Icon>
+				</MenuItem>
+				<MenuItem x:Name="mnuEditPaste" Header="Paste" Click="mnuEditPaste_Click" InputGestureText="Ctrl+V">
+					<MenuItem.Icon>
+						<Image Source="/Literay;component/Resources/IconEditPaste.png"/>
+					</MenuItem.Icon>
+				</MenuItem>
+				<Separator/>
+				<MenuItem x:Name="mnuEditSelectAll" Header="Select All" Click="mnuEditSelectAll_Click" InputGestureText="Ctrl+A">
+					<MenuItem.Icon>
+						<Image Source="/Literay;component/Resources/IconEditSelectAll.png"/>
+					</MenuItem.Icon>
+				</MenuItem>
+			</MenuItem>
+			<MenuItem Header="View">
+				<MenuItem x:Name="mnuViewCloseAllRenderWindows" Header="Close All Render Windows" Click="mnuViewCloseAllRenderWindows_Click"/>
+			</MenuItem>
+			<MenuItem Header="Script">
+				<MenuItem x:Name="mnuScriptRun" Header="Run" Click="mnuScriptRun_Click" InputGestureText="F5">
+					<MenuItem.Icon>
+						<Image Source="/Literay;component/Resources/IconScriptRun.png"/>
+					</MenuItem.Icon>
+				</MenuItem>
+				<MenuItem x:Name="mnuScriptStop" Header="Stop" Click="mnuScriptStop_Click" InputGestureText="Break" IsEnabled="False">
+					<MenuItem.Icon>
+						<Image Source="/Literay;component/Resources/IconScriptStop.png"/>
+					</MenuItem.Icon>
+				</MenuItem>
+			</MenuItem>
+			<MenuItem Header="Render Properties">
+				<MenuItem x:Name="mnuRenderPropertiesLoadDefault" Header="Load Default" Click="mnuRenderPropertiesLoadDefault_Click"/>
+			</MenuItem>
+			<MenuItem Header="Help">
+				<MenuItem Header="About" Click="mnuHelpAbout_Click"/>
+			</MenuItem>
+		</Menu>
+		<ToolBarTray IsLocked="True" Grid.Row="1" Grid.ColumnSpan="2">
+			<ToolBar>
+				<Button Click="mnuFileNew_Click" ToolTip="New">
+					<Image Source="/Literay;component/Resources/IconFileNew.png"/>
+				</Button>
+				<Button Click="mnuFileOpen_Click" ToolTip="Open">
+					<Image Source="/Literay;component/Resources/IconFileOpen.png"/>
+				</Button>
+				<Button Click="mnuFileSave_Click" ToolTip="Save">
+					<Image Source="/Literay;component/Resources/IconFileSave.png"/>
+				</Button>
+				<Button Click="mnuFileSaveAll_Click" ToolTip="Save All">
+					<Image Source="/Literay;component/Resources/IconFileSaveAll.png"/>
+				</Button>
+			</ToolBar>
+			<ToolBar>
+				<Button x:Name="btnEditUndo" Click="mnuEditUndo_Click" ToolTip="Undo">
+					<Image Source="/Literay;component/Resources/IconEditUndo.png"/>
+				</Button>
+				<Button x:Name="btnEditRedo" Click="mnuEditRedo_Click" ToolTip="Redo">
+					<Image Source="/Literay;component/Resources/IconEditRedo.png"/>
+				</Button>
+				<Separator/>
+				<Button x:Name="btnEditCut" Click="mnuEditCut_Click" ToolTip="Cut">
+					<Image Source="/Literay;component/Resources/IconEditCut.png"/>
+				</Button>
+				<Button x:Name="btnEditCopy" Click="mnuEditCopy_Click" ToolTip="Copy">
+					<Image Source="/Literay;component/Resources/IconEditCopy.png"/>
+				</Button>
+				<Button x:Name="btnEditPaste" Click="mnuEditPaste_Click" ToolTip="Paste">
+					<Image Source="/Literay;component/Resources/IconEditPaste.png"/>
+				</Button>
+				<Separator/>
+				<Button x:Name="btnEditSelectAll" Click="mnuEditSelectAll_Click" ToolTip="SelectAll">
+					<Image Source="/Literay;component/Resources/IconEditSelectAll.png"/>
+				</Button>
+			</ToolBar>
+			<ToolBar>
+				<Button x:Name="btnScriptRun" Click="mnuScriptRun_Click" ToolTip="Run">
+					<Image Source="/Literay;component/Resources/IconScriptRun.png"/>
+				</Button>
+				<Button x:Name="btnScriptStop" Click="mnuScriptStop_Click" ToolTip="Stop" IsEnabled="False">
+					<Image Source="/Literay;component/Resources/IconScriptStop.png"/>
+				</Button>
+			</ToolBar>
+		</ToolBarTray>
+		<TabControl x:Name="tabMain" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.Row="2">
+			<TabControl.ContextMenu>
+				<ContextMenu>
+					<MenuItem x:Name="cmnuEditUndo" Header="Undo" Click="mnuEditUndo_Click" InputGestureText="Ctrl+Z">
+						<MenuItem.Icon>
+							<Image Source="/Literay;component/Resources/IconEditUndo.png"/>
+						</MenuItem.Icon>
+					</MenuItem>
+					<MenuItem x:Name="cmnuEditRedo" Header="Redo" Click="mnuEditRedo_Click" InputGestureText="Ctrl+Y">
+						<MenuItem.Icon>
+							<Image Source="/Literay;component/Resources/IconEditRedo.png"/>
+						</MenuItem.Icon>
+					</MenuItem>
+					<Separator/>
+					<MenuItem x:Name="cmnuEditCut" Header="Cut" Click="mnuEditCut_Click" InputGestureText="Ctrl+X">
+						<MenuItem.Icon>
+							<Image Source="/Literay;component/Resources/IconEditCut.png"/>
+						</MenuItem.Icon>
+					</MenuItem>
+					<MenuItem x:Name="cmnuEditCopy" Header="Copy" Click="mnuEditCopy_Click" InputGestureText="Ctrl+C">
+						<MenuItem.Icon>
+							<Image Source="/Literay;component/Resources/IconEditCopy.png"/>
+						</MenuItem.Icon>
+					</MenuItem>
+					<MenuItem x:Name="cmnuEditPaste" Header="Paste" Click="mnuEditPaste_Click" InputGestureText="Ctrl+V">
+						<MenuItem.Icon>
+							<Image Source="/Literay;component/Resources/IconEditPaste.png"/>
+						</MenuItem.Icon>
+					</MenuItem>
+					<Separator/>
+					<MenuItem x:Name="cmnuEditSelectAll" Header="Select All" Click="mnuEditSelectAll_Click" InputGestureText="Ctrl+A">
+						<MenuItem.Icon>
+							<Image Source="/Literay;component/Resources/IconEditSelectAll.png"/>
+						</MenuItem.Icon>
+					</MenuItem>
+				</ContextMenu>
+			</TabControl.ContextMenu>
+		</TabControl>
+		<xctk:PropertyGrid x:Name="propMain" SelectedObject="{Binding}" ShowSortOptions="False" Grid.Row="2" Grid.Column="1" ShowSearchBox="False"/>
+	</Grid>
+</Window>
