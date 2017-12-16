@@ -1,16 +1,28 @@
 # Literay
 
-Literay is a raytracer for rendering of high-quality static scenes. This is not done in real-time, so therefore it is not in the same category as a 3D engine. However, raytracing facilitates different interesting graphics features. For instance, non-polygonal primitives such as those on the screenshots as well as textures, bump maps, anti-aliasing and especially realistic lighting are key features to raytracing. You can create [Lua](https://en.wikipedia.org/wiki/Lua_%28programming_language%29) scripts which generate scenes that are set up static, but contain entities generated on the fly, in loops or using recursive functions.
+Literay is a raytracer for rendering of high-quality static scenes. This is not
+done in real-time, so therefore it is not in the same category as a 3D engine.
+However, raytracing facilitates different interesting graphics features. For
+instance, non-polygonal primitives such as those on the screenshots as well as
+textures, bump maps, anti-aliasing and especially realistic lighting are key
+features to raytracing. You can create
+[Lua](https://en.wikipedia.org/wiki/Lua_%28programming_language%29) scripts
+which generate scenes that are set up static, but contain entities generated on
+the fly, in loops or using recursive functions.
 
-Literay's Lua scripts can also be used to render multiple sequentive images, thus creating a moving scene. These images can be then converted to a video *(conversion is not part of Literay)*. Lua scripts leave you enough options to create any set of entities and light settings to render. The best example of how Lua is superior over a static markup script is the sphere fractal as on the screenshot below.
+Literay's Lua scripts can also be used to render multiple sequentive images,
+thus creating a moving scene. These images can be then converted to a video
+*(conversion is not part of Literay)*. Lua scripts leave you enough options to
+create any set of entities and light settings to render. The best example of how
+Lua is superior over a static markup script is the sphere fractal as on the
+screenshot below.
 
-Literay also takes advantage of multi-core processors. It renders multiple times faster on a CPU with 4 cores and hyper threading in comparison to using only a single CPU or thread. Raytracing is a task that can be very easily parallelized.
+Literay also takes advantage of multi-core processors. It renders multiple times
+faster on a CPU with 4 cores and hyper threading in comparison to using only a
+single CPU or thread. Raytracing is a task that can be very easily parallelized.
 
-These scenes can also be downloaded as PNG files, rendered at 1920x1080 and high quality settings.
-
-
-
-
+These scenes can also be downloaded as PNG files, rendered at 1920x1080 and high
+quality settings.
 
 ## Features
 
