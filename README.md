@@ -42,16 +42,16 @@ quality settings.
 
 ## Screenshots
 
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/001.jpg&height=100)](https://bytecode77.com/images/sites/garage/software/literay/gallery/001.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/002.jpg&height=100)](https://bytecode77.com/images/sites/garage/software/literay/gallery/002.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/003.jpg&height=100)](https://bytecode77.com/images/sites/garage/software/literay/gallery/003.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/004.jpg&height=100)](https://bytecode77.com/images/sites/garage/software/literay/gallery/004.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/005.jpg&height=100)](https://bytecode77.com/images/sites/garage/software/literay/gallery/005.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/006.jpg&height=100)](https://bytecode77.com/images/sites/garage/software/literay/gallery/006.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/007.jpg&height=100)](https://bytecode77.com/images/sites/garage/software/literay/gallery/007.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/008.jpg&height=100)](https://bytecode77.com/images/sites/garage/software/literay/gallery/008.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/009.jpg&height=100)](https://bytecode77.com/images/sites/garage/software/literay/gallery/009.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/010.jpg&height=100)](https://bytecode77.com/images/sites/garage/software/literay/gallery/010.jpg)
+[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/001.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/001.jpg)
+[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/002.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/002.jpg)
+[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/003.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/003.jpg)
+[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/004.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/004.jpg)
+[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/005.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/005.jpg)
+[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/006.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/006.jpg)
+[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/007.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/007.jpg)
+[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/008.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/008.jpg)
+[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/009.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/009.jpg)
+[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/010.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/010.jpg)
 
 ![](https://bytecode77.com/images/sites/garage/software/literay/gallery/011.jpg)
 
