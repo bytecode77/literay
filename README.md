@@ -19,6 +19,8 @@ Literay also takes advantage of multi-core processors, because raytracing is a t
 [![](https://bytecode77.com/images/pages/literay/009.thumb.jpg)](https://bytecode77.com/images/pages/literay/009.jpg)
 [![](https://bytecode77.com/images/pages/literay/010.thumb.jpg)](https://bytecode77.com/images/pages/literay/010.jpg)
 
+## Scene editor
+
 Using the main application, scenes can be scripted and rendered.
 
 *Please note that I have developed the scene editor when I was still learning WPF. This project's focus is the rendering engine.*
