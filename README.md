@@ -1,66 +1,46 @@
 # Literay
 
-Literay is a raytracer for rendering of high-quality static scenes. This is not
-done in real-time, so therefore it is not in the same category as a 3D engine.
-However, raytracing facilitates different interesting graphics features. For
-instance, non-polygonal primitives such as those on the screenshots as well as
-textures, bump maps, anti-aliasing and especially realistic lighting are key
-features to raytracing. You can create
-[Lua](https://en.wikipedia.org/wiki/Lua_%28programming_language%29) scripts
-which generate scenes that are set up static, but contain entities generated on
-the fly, in loops or using recursive functions.
+## Raytracer
 
-Literay's Lua scripts can also be used to render multiple sequentive images,
-thus creating a moving scene. These images can be then converted to a video
-*(conversion is not part of Literay)*. Lua scripts leave you enough options to
-create any set of entities and light settings to render. The best example of how
-Lua is superior over a static markup script is the sphere fractal as on the
-screenshot below.
+Raytracing is the process of high-quality static image rendering. Literay implements different graphics features, such as non-polygonal primitives, textures, bump maps, anti-aliasing and especially realistic lighting. The [Lua](https://en.wikipedia.org/wiki/Lua_%28programming_language%29) scripting engine allows scene generation using the script editor.
 
-Literay also takes advantage of multi-core processors. It renders multiple times
-faster on a CPU with 4 cores and hyper threading in comparison to using only a
-single CPU or thread. Raytracing is a task that can be very easily parallelized.
+Literay's Lua scripts can also be used to render multiple sequential images, thus creating a moving scene *(image to video conversion is not part of Literay)*. The scripting engine provides enough options to create any set of entities and lighting to render. The best example of how Lua is superior over a static markup script is the fractal scene.
 
-These scenes can also be downloaded as PNG files, rendered at 1920x1080 and high
-quality settings.
+Literay also takes advantage of multi-core processors, because raytracing is a task that can be very easily parallelized.
+
+[![](https://bytecode77.com/images/pages/literay/001.thumb.jpg)](https://bytecode77.com/images/pages/literay/001.jpg)
+[![](https://bytecode77.com/images/pages/literay/002.thumb.jpg)](https://bytecode77.com/images/pages/literay/002.jpg)
+[![](https://bytecode77.com/images/pages/literay/003.thumb.jpg)](https://bytecode77.com/images/pages/literay/003.jpg)
+[![](https://bytecode77.com/images/pages/literay/004.thumb.jpg)](https://bytecode77.com/images/pages/literay/004.jpg)
+[![](https://bytecode77.com/images/pages/literay/005.thumb.jpg)](https://bytecode77.com/images/pages/literay/005.jpg)
+[![](https://bytecode77.com/images/pages/literay/006.thumb.jpg)](https://bytecode77.com/images/pages/literay/006.jpg)
+[![](https://bytecode77.com/images/pages/literay/007.thumb.jpg)](https://bytecode77.com/images/pages/literay/007.jpg)
+[![](https://bytecode77.com/images/pages/literay/008.thumb.jpg)](https://bytecode77.com/images/pages/literay/008.jpg)
+[![](https://bytecode77.com/images/pages/literay/009.thumb.jpg)](https://bytecode77.com/images/pages/literay/009.jpg)
+[![](https://bytecode77.com/images/pages/literay/010.thumb.jpg)](https://bytecode77.com/images/pages/literay/010.jpg)
+
+Using the main application, scenes can be scripted and rendered.
+
+*Please note that I have developed the scene editor when I was still learning WPF. This project's focus is the rendering engine.*
+
+![](https://bytecode77.com/images/pages/literay/app.jpg)
 
 ## Features
 
-* Primitives
-  * Plane
-  * Cube
-  * Sphere
-  * Cylinder
-  * Tube
-* Lighting, shadows & soft shadows
-* Reflection
-* Anti-Aliasing (different pre-defined OG / RG variants, from 4x to 16x)
-* Textures (with bi-linear filtering)
-* Runtime generated scenes using Lua scripts
-* A scene editor
-* Multi-threaded rendering implemented in a native C++ DLL
-
-## Screenshots
-
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/001.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/001.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/002.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/002.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/003.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/003.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/004.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/004.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/005.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/005.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/006.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/006.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/007.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/007.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/008.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/008.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/009.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/009.jpg)
-[![](https://bytecode77.com/cache/thumbs/?path=images/sites/garage/software/literay/gallery/010.jpg&height=200)](https://bytecode77.com/images/sites/garage/software/literay/gallery/010.jpg)
-
-![](https://bytecode77.com/images/sites/garage/software/literay/gallery/011.jpg)
+- Primitives *(Cube, Sphere, Cylinder, Tube, Plane)*
+- Lighting, shadows & soft shadows
+- Reflection
+- Anti-Aliasing
+- Textures, bi-linear filtering
+- Lua scene editor for runtime generated scenes
+- Multi-threaded rendering
+- Actual rendering is implemented in native C++
 
 ## Downloads
 
-[![](https://bytecode77.com/images/shared/fileicons/zip.png) Literay 6.0.2 Binaries.zip](https://bytecode77.com/downloads/garage/software/Literay%206.0.2%20Binaries.zip)
-
-[![](https://bytecode77.com/images/shared/fileicons/zip.png) Literay 6.0.2 Rendered Scenes.zip](https://bytecode77.com/downloads/garage/software/Literay%206.0.2%20Rendered%20Scenes.zip)
+[![](http://bytecode77.com/public/fileicons/zip.png) Literay 6.0.2.zip](https://bytecode77.com/downloads/Literay%206.0.2.zip)<br />
+[![](http://bytecode77.com/public/fileicons/zip.png) Literay 6.0.2 Rendered Scenes.zip](https://bytecode77.com/downloads/Literay%206.0.2%20Rendered%20Scenes.zip)
 
 ## Project Page
 
-[![](https://bytecode77.com/images/shared/favicon16.png) bytecode77.com/garage/software/literay](https://bytecode77.com/garage/software/literay)
+[![](https://bytecode77.com/public/favicon16.png) bytecode77.com/literay](https://bytecode77.com/literay)
