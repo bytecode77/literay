@@ -25,7 +25,7 @@ Using the main application, scenes can be scripted and rendered.
 
 *Please note that I have developed the scene editor when I was still learning WPF. This project's focus is the rendering engine.*
 
-![](https://bytecode77.com/images/pages/literay/app.jpg)
+![](https://bytecode77.com/images/pages/literay/app.png)
 
 ## Features
 
