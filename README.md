@@ -40,8 +40,8 @@ Using the main application, scenes can be scripted and rendered.
 
 ## Downloads
 
-[![](http://bytecode77.com/public/fileicons/zip.png) Literay 6.0.2.zip](https://bytecode77.com/downloads/Literay%206.0.2.zip)<br />
-[![](http://bytecode77.com/public/fileicons/zip.png) Literay 6.0.2 Rendered Scenes.zip](https://bytecode77.com/downloads/Literay%206.0.2%20Rendered%20Scenes.zip)
+[![](http://bytecode77.com/public/fileicons/zip.png) Literay 6.0.2.zip](https://downloads.bytecode77.com/Literay%206.0.2.zip)<br />
+[![](http://bytecode77.com/public/fileicons/zip.png) Literay 6.0.2 Rendered Scenes.zip](https://downloads.bytecode77.com/Literay%206.0.2%20Rendered%20Scenes.zip)
 
 ## Project Page
 
